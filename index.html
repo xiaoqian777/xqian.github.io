@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>即将奔赴</title>
+</head>
+<body>
+    <script>
+    function jumpUrl(){
+        var arr = new Array(
+            "https://a1-1322509852.cos-website.ap-nanjing.myqcloud.com",
+            "https://a2-1322509852.cos-website.ap-chengdu.myqcloud.com",
+            "https://a3-1322509852.cos-website.ap-beijing.myqcloud.com",
+            "https://a4-1322509852.cos-website.ap-guangzhou.myqcloud.com",
+            "https://a5-1322509852.cos-website.ap-shanghai.myqcloud.com",
+        );
+     window.location.href = arr[Math.floor(Math.random() * arr.length)];
+    }
+    setTimeout(function () {
+    jumpUrl();},200);
+    </script>
+</body>
+</html>
